@@ -29,7 +29,9 @@ public class UploadServlet extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		List<String> urls = new ArrayList<>();
-		String host = "http://" + request.getServerName() + ":" + request.getServerPort() + "/yinji";
+//		String host = "http://" + request.getServerName() + ":" + request.getServerPort() + "/yinji";
+		String host = "https://lifegoal.anansicorp.cn";
+		
 
 		// 优化一下文件的存储
 		String path = request.getSession().getServletContext().getRealPath("/") + "/upload";
