@@ -1,4 +1,4 @@
-package cn.shuitian.wx.mpapp;
+package com.shuitianyun.wx.mpapp;
 
 public class ErrorResponse {
 	public int errcode;
