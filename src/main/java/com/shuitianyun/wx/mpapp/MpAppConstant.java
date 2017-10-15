@@ -1,4 +1,4 @@
-package cn.shuitian.wx.mpapp;
+package com.shuitianyun.wx.mpapp;
 
 public class MpAppConstant {
 	public static String AppId = "wxc855d041bcba89fc";
