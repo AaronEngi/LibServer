@@ -6,8 +6,8 @@ public class SmsConfig {
     public final String accessKeyId;
     public final String secretAccessKey;
     public final String endPoint = "http://sms.bj.baidubce.com";
-    public final String invokeId = "dkw86m01T-26Nv9-H5Z3";
-    public final String templateCode = "smsTpl:0000000000000000000000";
+    public String invokeId;
+    public String templateCode;
 
     public SmsConfig(String accessKeyId, String secretAccessKey) {
         this.accessKeyId = accessKeyId;
