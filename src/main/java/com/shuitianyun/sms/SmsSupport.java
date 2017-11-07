@@ -45,6 +45,8 @@ public class SmsSupport {
                 .withContentVar(vars);
 
         // 发送请求
+        //#com.baidubce.BceClientException: Unable to execute HTTP request
+        //#Caused by: org.apache.http.conn.ConnectTimeoutException: Connect to sms.bj.baidubce.com:80 [sms.bj.baidubce.com/61.135.162.182] failed: connect timed out
         SendMessageV2Response response = smsClient.sendMessage(request);
 
         // 解析请求响应 response.isSuccess()为true 表示成功
