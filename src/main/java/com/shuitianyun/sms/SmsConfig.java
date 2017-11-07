@@ -1,6 +1,6 @@
 package com.shuitianyun.sms;
 
-import cn.tyrael.os.baidu.BosConfig;
+import wang.tyrael.os.baidu.BosConfig;
 
 public class SmsConfig {
     public final String accessKeyId;
