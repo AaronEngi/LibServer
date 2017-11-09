@@ -1,4 +1,4 @@
-package com.shuitianyun.sms;
+package wang.tyrael.sms;
 
 import wang.tyrael.os.baidu.BosConfig;
 

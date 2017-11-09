@@ -1,4 +1,4 @@
-package com.shuitianyun.sms;
+package wang.tyrael.sms;
 
 import java.util.HashMap;
 import java.util.Map;
