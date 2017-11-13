@@ -12,11 +12,11 @@ import okhttp3.Response;
 
 //https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=20161122
 public class MpAppLoginApi {
-	public public final String UrlSession =
+	public static final String UrlSession =
 			"https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code";
-	private public final String TAG = "MpAppLoginManager";
+	private static final String TAG = "MpAppLoginManager";
 			
-	public public String getUrlSession(String code){
+	public static String getUrlSession(String code){
 		return String.format(UrlSession, MpAppConstant.AppId, MpAppConstant.AppSecret, code);
 	}
 	
