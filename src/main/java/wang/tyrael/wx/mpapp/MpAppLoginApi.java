@@ -1,4 +1,4 @@
-package com.shuitianyun.wx.mpapp;
+package wang.tyrael.wx.mpapp;
 
 
 import java.io.IOException;
@@ -12,7 +12,7 @@ import wang.tyrael.log.LogAdapter;
 
 //https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=20161122
 public class MpAppLoginApi {
-	public static final String UrlSession = 
+	public static final String UrlSession =
 			"https://api.weixin.qq.com/sns/jscode2session?appid=%s&secret=%s&js_code=%s&grant_type=authorization_code";
 	private static final String TAG = "MpAppLoginApi";
 

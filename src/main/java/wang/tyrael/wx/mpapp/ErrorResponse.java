@@ -1,4 +1,4 @@
-package com.shuitianyun.wx.mpapp;
+package wang.tyrael.wx.mpapp;
 
 public class ErrorResponse {
 	public int errcode;
