@@ -5,9 +5,9 @@ import java.io.IOException;
 
 import com.google.gson.Gson;
 import com.google.gson.JsonSyntaxException;
-
 import okhttp3.Response;
-import wang.tyrael.http.HttpDefault;
+
+import wang.tyrael.http.simpleapi.HttpDefault;
 import wang.tyrael.log.LogAdapter;
 
 //https://mp.weixin.qq.com/debug/wxadoc/dev/api/api-login.html?t=20161122
