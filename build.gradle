@@ -1,10 +1,4 @@
-group 'com.shuitianyun'
-version '1.0-SNAPSHOT'
-
 buildscript {
-    ext {
-        springBootVersion = '1.5.7.RELEASE'
-    }
     repositories {
         mavenLocal()
         maven { url 'http://maven.aliyun.com/nexus/content/groups/public' }
@@ -13,13 +7,19 @@ buildscript {
     }
     dependencies {
         classpath("org.asciidoctor:asciidoctor-gradle-plugin:1.5.3")
-        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
     }
 }
 
-apply plugin: 'java'
+plugins {
+    id 'org.springframework.boot'
+    id 'io.spring.dependency-management'
+    id 'java'
+}
+
+group 'com.shuitianyun'
+version '1.0-SNAPSHOT'
+
 apply plugin: 'idea'
-apply plugin: 'org.springframework.boot'
 
 sourceCompatibility = 1.8
 
@@ -32,7 +32,7 @@ repositories{
 dependencies {
     compile project(path:":LibJava")
 
-    compile('org.springframework.boot:spring-boot-starter-web')
+    implementation 'org.springframework.boot:spring-boot-starter-web'
     compile('org.springframework.boot:spring-boot-starter-security')
 
     compile 'com.squareup.okhttp3:okhttp:latest.release'
@@ -45,6 +45,6 @@ dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
 }
 
-bootRepackage.enabled = false
+//bootRepackage.enabled = false
 
 
